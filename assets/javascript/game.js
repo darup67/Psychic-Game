@@ -39,7 +39,7 @@ function theGame() {
                 console.log("You win.");
 
 
-                document.getElementById("image-here").setAttribute("src", "assets/images/lightbulb2.gif");
+                document.getElementById("image-here").setAttribute("src", "./assets/images/lightbulb2.gif");
 
 
                 setTimeout(function () {
@@ -49,7 +49,7 @@ function theGame() {
                 document.getElementById("your-wins").innerHTML = wins;
 
                 setTimeout(function () {
-                    document.getElementById("image-here").setAttribute("src", "assets/images/black-box.png");
+                    document.getElementById("image-here").setAttribute("src", "./assets/images/black-box.png");
                 }, 3000);
 
                 resetGame();
