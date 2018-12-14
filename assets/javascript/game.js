@@ -20,7 +20,7 @@ function theGame() {
 
     function checkIfCorrect() {
 
-        document.onkeyup = function (event) {
+        document.onkeyup = function(event) {
 
 
             var userChoice = String.fromCharCode(event.keyCode).toLowerCase();
@@ -42,14 +42,14 @@ function theGame() {
                 document.getElementById("image-here").setAttribute("src", "./assets/images/lightbulb2.gif");
 
 
-                setTimeout(function () {
+                setTimeout(function() {
                     alert("You win!");
                 }, 3000);
                 wins = wins + 1;
                 document.getElementById("your-wins").innerHTML = wins;
 
-                setTimeout(function () {
-                    document.getElementById("image-here").setAttribute("src", "./assets/images/black-box.png");
+                setTimeout(function() {
+                    document.getElementById("image-here").setAttribute("src", "./assets/images/blackbox.png");
                 }, 3000);
 
                 resetGame();
